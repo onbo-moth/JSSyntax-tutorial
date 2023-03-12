@@ -1,0 +1,8 @@
+<root>
+  <h1>Hello everyone!</h1>
+  <p>asdfasdfasdf<br/>aaaa</p>
+
+  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+
+  <codeblock>console.log(1)</codeblock>
+</root>

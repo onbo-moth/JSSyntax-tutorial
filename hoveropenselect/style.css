@@ -1,0 +1,31 @@
+.hoverselect {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  width: 200px;
+}
+
+.hovercontainer {
+  position: absolute;
+
+  top: -1px;
+  left: -1px;
+
+  width: inherit;
+
+  z-index: 2;
+
+  background-color: white;
+  border: 1px dotted red;
+
+  overflow-y: hidden;
+}
+
+.hoverbutton {
+  border: 2px solid purple;
+  background-color: lightgray;
+  display: block;
+
+  width: 100%;
+  text-align: center;
+}
