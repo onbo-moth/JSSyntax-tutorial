@@ -46,7 +46,10 @@ function parseElement(node, parent){
 
       htmlnode.classList.add(node.tagName)
     } else if(node.tagName == "codeblock"){
-      htmlnode = new ConsoleClient(consoleServer, node.textContent)
+      let text = node.textContent
+      text = removeIndentation(text, minSpaces(text))
+
+      htmlnode = new ConsoleClient(consoleServer, text)
 
       parent.appendChild(htmlnode)
       return
@@ -67,4 +70,34 @@ function parseElement(node, parent){
       parseElement(child, htmlnode)
     }
   }
+}
+
+function minSpaces(text){
+  let split = text.split("\n")
+  let minSpaceValue = 100
+
+  for(const line of split){
+    let spaces = 0
+
+    if(line.trim() == "") continue;
+
+    for(let i=0; i<line.length; i++){
+      if(line.charAt(i) != " ") break
+      spaces++
+    }
+
+    if(spaces < minSpaceValue) minSpaceValue = spaces
+  }
+
+  return minSpaceValue
+}
+
+function removeIndentation(text, spaces){
+  let split = text.split("\n")
+
+  for(let i=0; i<split.length; i++){
+    split[i] = split[i].substr(spaces)
+  }
+
+  return split.join("\n")
 }

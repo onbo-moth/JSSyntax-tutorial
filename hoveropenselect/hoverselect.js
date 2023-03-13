@@ -19,12 +19,12 @@ class HoverSelect {
 
     for(const button of buttons){
       let htmlButton = document.createElement("button")
-      htmlButton.innerText = button
+      htmlButton.innerText = button[0]
       htmlButton.classList.add("hoverbutton")
 
       htmlButton.addEventListener('click', loadPage.bind(loadPage,
         document.getElementById("content"), 
-        button.toLowerCase()
+        button[1].toLowerCase()
       ))
 
       this.hoverDiv.appendChild(htmlButton)
@@ -35,6 +35,7 @@ class HoverSelect {
     this.isHovered = false
 
     this.targetHeight = this.hoverDiv.scrollHeight
+    this.animationPeriod = 0.25
     this.animation = 0 // 0 to 1
 
     this.lastAnimationTimestamp = Date.now();
@@ -49,7 +50,8 @@ class HoverSelect {
     let time = Date.now()
     let timeFrame = time - this.lastAnimationTimestamp
 
-    this.animation += (this.isHovered ? 1 : -1) * (1 / timeFrame)
+    this.animation += (this.isHovered ? 1 : -1) 
+                    * (timeFrame / (1000 * this.animationPeriod))
 
     if(this.animation < 0) this.animation = 0 
     if(this.animation > 1) this.animation = 1

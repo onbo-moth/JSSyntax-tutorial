@@ -32,7 +32,8 @@
 
   margin-left: auto;
 
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-buttons .hoverselect {
