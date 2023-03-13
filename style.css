@@ -40,6 +40,16 @@
   margin: 30px;
 }
 
+.mainpagecanvas {
+  overflow: hidden;
+  margin: 0;
+  height: 500px;
+}
+
+.canvas {
+  margin: 0;
+}
+
 .content {
   border: 1px solid purple;
 }
