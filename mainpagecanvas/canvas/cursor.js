@@ -3,10 +3,18 @@ class CanvasCursor {
     this.x = 0
     this.y = 0
 
+    this.px = 0
+    this.py = 0
+
     this.hover = false
 
-    canvas.addEventListener("mousemove", function(e){
-      let rect = e.target.getBoundingClientRect();
+    let entireContainer = document.getElementsByClassName("content")[0]
+
+    entireContainer.addEventListener("mousemove", function(e){
+      this.px = this.x
+      this.py = this.y
+
+      let rect = canvas.getBoundingClientRect();
 
       this.x = e.clientX - rect.left
       this.y = e.clientY - rect.top
@@ -14,7 +22,7 @@ class CanvasCursor {
       this.hover = true
     }.bind(this))
 
-    canvas.addEventListener("mouseleave", function(e){
+    entireContainer.addEventListener("mouseleave", function(e){
       this.hover = false
     }.bind(this))
   }

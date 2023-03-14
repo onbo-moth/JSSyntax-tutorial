@@ -46,10 +46,26 @@
   height: 500px;
 }
 
-.canvas {
-  margin: 0;
+.content {
+  position: relative;
+
+  border: 1px solid purple;
 }
 
-.content {
-  border: 1px solid purple;
+.mainpagecontent {
+  position: absolute;
+
+  width: 300px;
+  height: 200px;
+
+  top: 50px;
+  left: 50px;
+
+  background-color: #ffffff88;
+
+  border: 1px solid black;
+}
+
+.canvas {
+  margin: 0;
 }

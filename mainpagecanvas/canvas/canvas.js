@@ -29,14 +29,21 @@ class Painter {
   animation(){
     this.updatePointPos()
 
-    let cursorPosCamera = {
-      x: this.cursor.x + this.camera.xOffset,
-      y: this.cursor.y + this.camera.yOffset
-    }
+    let cursorPos = new Point(
+      this.cursor.x + this.camera.xOffset,
+      this.cursor.y + this.camera.yOffset
+    )
+
+    let cursorPosPrev = new Point(
+      this.cursor.px + this.camera.xOffset,
+      this.cursor.py + this.camera.yOffset
+    )
+
+    let cursorLine = new Line(cursorPos, cursorPosPrev)
 
     for(let i=0; i<this.triangles.triangles.length; i++){
       if(this.cursor.hover){
-        if(this.triangles.triangles[i].pointInside(cursorPosCamera)){
+        if(this.triangles.triangles[i].collisionLine(cursorLine)){
           this.triangles.triangles[i].glow = 1
           continue;
         }
