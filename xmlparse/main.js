@@ -44,7 +44,7 @@ function parseElement(node, parent){
     if(node.tagName.startsWith("c-")){
       htmlnode = document.createElement("span")
 
-      htmlnode.classList.add(node.tagName)
+      htmlnode.classList.add(syntaxColors[node.tagName])
     } else if(node.tagName == "codeblock"){
       let text = node.textContent
       text = removeIndentation(text, minSpaces(text))

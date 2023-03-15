@@ -3,6 +3,7 @@ class ConsoleClient {
     this.consoleServer = consoleServer
 
     this.consoleDiv = document.createElement("div")
+    this.consoleDiv.classList.add("consolecontainer")
 
     this.codeDiv = document.createElement("div")
     this.codeDiv.classList.add("codediv")
