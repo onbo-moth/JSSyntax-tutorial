@@ -1,11 +1,19 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
-
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <h1>Obiekty DOM</h1>
+  <p>JavaScript korzysta z tzw. modelu "DOM", który pozwala na edytowanie kodu html i css za pomocą kodu JS.</p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+
+    // Oto najprostszy przykład: pod konsolą znajduje się napis "tekst" z przypisanym id "text", poniższy kod szuka elementu z id text i zamienia tekst na "lepszy tekst".
+
+    document.getElementById("text").innerHTML="Lepszy tekst";
+
+    // Można też użyć DOM do edycji CSS.
+
+    document.getElementById("text").style.color = "red";
+    
   </codeblock>
+
+  <p id="text"> Tekst </p>
+
 </root>

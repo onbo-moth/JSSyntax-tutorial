@@ -1,11 +1,36 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
+  <h1>Typy Danych</h1>
+  <p> W javaScript istnieje sześć podstawowych typów danych </p>
 
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+<table>
+    <tr>
+      <th>Typ Danych</th>
+      <th>Informacje</th>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td>Liczby</td>
+    </tr>
+    <tr>
+      <td>String</td>
+      <td>Ciąg znaków</td>
+    </tr>
+    <tr>
+      <td>Boolean</td>
+      <td>True albo False</td>
+    </tr>
+    <tr>
+      <td>Object</td>
+      <td>Obiekty</td>
+    </tr>
+    <tr>
+      <td>Undefined</td>
+      <td>Niezdefiniowany</td>
+    </tr>
+    <tr>
+      <td>Null</td>
+      <td>Puste</td>
+    </tr>
+  </table>
 
-  <codeblock>
-    console.log(1)
-    console.log(2)
-  </codeblock>
 </root>

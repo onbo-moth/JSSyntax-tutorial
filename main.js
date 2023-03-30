@@ -15,7 +15,7 @@ new HoverSelect(buttonsParent, "Syntax", [
   ["Pętle", "jsloops"],
   ["Typy danych", "jstypes"],
   ["Funkcje", "jsfunctions"],
-  ["Debugger", "jsdebug"],
+  ["Debugging", "jsdebug"],
   ["Obiekty", "jsobjects"],
   ["Obiekty Dom", "jsdom"]
 ])

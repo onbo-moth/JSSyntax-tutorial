@@ -77,6 +77,8 @@
     </tr>
   </table>
 
+  <br/>
+
   <codeblock>
 
     var x = 5; //przypisanie

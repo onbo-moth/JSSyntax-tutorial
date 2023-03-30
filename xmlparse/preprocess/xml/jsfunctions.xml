@@ -1,11 +1,20 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
-
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <h1>Funkcje</h1>
+  <p>Funkcje to blok kodu pełniący daną funkcję który nic nie robi do czasu aktywowania. <br/> <br/>
+  Funkcje istnieją po to, aby można było ich użyć zamiast powtarzać ponownie ten sam kod wiele razy.</p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+   
+  function nazwa(zm1,zm2) 
+  {
+    // kod
+    return zm1 + zm2
+  }
+
+  var x = 2;
+  var y = 3;
+
+  console.log(nazwa(x,y));
+
   </codeblock>
 </root>

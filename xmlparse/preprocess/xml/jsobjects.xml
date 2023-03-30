@@ -1,11 +1,23 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
+  <h1>Obiekty</h1>
+  <p>Obiekty to zmienne które mogą posiadać wiele informacji oraz funkcje (tzw. Metody) <br/> </p>
 
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <p>Obiekty tworzymy w poniższy sposób: </p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+
+    var osoba = 
+    {
+      imie: "Kamil",
+      nazwisko: "Biernat",
+      wiek: 16,
+      podpis: function() {return this.imie + " " + this.nazwisko;}
+    };
+
+    console.log(osoba.imie)
+    console.log(osoba.wiek)
+    console.log(osoba.podpis())
+
   </codeblock>
+  
 </root>

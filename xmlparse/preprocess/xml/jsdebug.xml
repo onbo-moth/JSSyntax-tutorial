@@ -1,11 +1,13 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
-
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <h1>Debugging</h1>
+  <p>tzw. "Debugging" to proces szukania i naprawiania błędów w programie komputerowym. <br/> <br/>
+  Obecnie każda większa przeglądarka internetowa domyślnie zawiera narzędzia do debugowania kodu JavaScript. <br/> 
+  Aby je aktywować wystarczy kliknąć F12 na klawiaturze i udać się do konsoli. <br/> 
+  Dodatkowo do debugowania mogą nam pomóc funckje console.log, console.warn i console.error które służą do wypisywania informacji do konsoli.</p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+    console.log("xyz")
+    console.warn("xyz")
+    console.error("xyz")
   </codeblock>
 </root>

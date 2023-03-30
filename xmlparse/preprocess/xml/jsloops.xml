@@ -8,18 +8,14 @@
 
   <codeblock>
 
-    // ta pętla wykona kod zawarty w {} 3 razy.
-
-    // struktura pętli for: for(*zmienna*;*warunek*;*inkrementacja lub dekrementacja*)
+    // ta pętla wykona kod zawarty w {} 3 razy. W pierwszym miejscu w nawiasie deklarujemy zmienną, w drugim wpisujemy warunek, a w 3 co się dzieję po każdej "akcji" pętli.
     
     for (let i = 0; i  &lt;= 3; i++) 
     {
       console.log(i)
     }
 
-    // to same ale wykonane przy użyciu pętli while
-
-    // struktura pętli while: while (*warunke*)
+    // to same ale wykonane przy użyciu pętli while. Jest ona prostsza gdyż tu w nawiasie musimy podać tylko warunek
 
     var x = 0;
 
