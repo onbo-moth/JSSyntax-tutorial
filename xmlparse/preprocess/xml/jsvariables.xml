@@ -1,11 +1,20 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
-
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <h1>Zmienne</h1>
+  <p> Zmienna to sposób na przechowywanie wartości w języku JavaScript i wielu innych. <br/> <br/> 
+  Dwa główne sposoby na zdeklarowanie Zmiennej w JavaScript to przy użyciu znaczników "var" i "let" <br/> <br/> 
+  Zmienne "var" to zmienne globalne, czyli takie które mogą być użyte w całym kodzie, a "let" to zmienne prywatne, czyli takie które zadziałają tylko w funkcji w której zostały zdeklarowane.</p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+
+    var x = 5;
+
+    alert(x);
+
+
+    let y = 2;
+
+    alert(y);
+
   </codeblock>
+
 </root>

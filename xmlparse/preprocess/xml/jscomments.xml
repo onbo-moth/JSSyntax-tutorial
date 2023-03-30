@@ -1,11 +1,21 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
-
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <h1>Komentarze</h1>
+  <p>Komentarze to tekst napisany w kodzie który jest ignorowany przez kompilator, co oznacza że nie wyświetli się na stronie, i nie spełni na niej żadnej funkcji. <br/> <br/> 
+  Komentarze używane są poprostu jako informacja dla siebie lub innych która ma wyjaśnić funkcję kodu. <br/> <br/> 
+  W JavaScript występują 2 rodzaje komentarzy: liniowy i blokowy. liniowy jak mówi sama nazwa zajmuje tylko jedną linijkę kodu, a blokowy zajmuje kilka.</p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+    
+    //komentarz liniowy
+
+    /* Komentarz blokowy
+    Zajmuje wiele lini */
+
+    /*alert("Uwaga")
+    pomimo że jest tu przywołana funkcja, 
+    nie zostanie ona wykonana 
+    gdyż jest to komentarz. */
+
   </codeblock>
+
 </root>

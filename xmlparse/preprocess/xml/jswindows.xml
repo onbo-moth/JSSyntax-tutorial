@@ -1,11 +1,28 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
-
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <h1>Okna dialogowe</h1>
+  <p>Okna dialogowe to najprostszy sposób na przekazywanie informacji użytkownikowi w języku JavaScript.<br/> <br/>
+  Okna Występują w 3 rodzajach: "alert", "prompt" i "confirm". <br/> <br/> <br/>
+  Okno alert jest najbardziej podstawowe i służy jedynie do przekazywania informacji użytkownikowi. <br/> <br/>
+  Okno prompt pozwala użytkownikowi wprowadzić dane z klawiatury. <br/> <br/>
+  Okno confirm zawiera 2 podstawowe opcje: "ok" i "anuluj" można go użyć aby umożliwić użytkownikowi podjęcie decyzji.</p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+
+    alert("Uwaga!");
+
+    var dane = prompt("wpisz dane");
+
+    if (confirm("Wyświetlić dane?")) 
+    {
+      alert("Dane: " + dane);
+    } 
+      else 
+    {
+      alert("Anulowano");
+    } 
+
   </codeblock>
+
+  <p> Powyższy kod najpierw wyświetli powiadomienie "Uwaga!", potem poprosi o podanie danych, a na końcu zapyta się czy wyświetlić wpisane dane. </p>
+
 </root>

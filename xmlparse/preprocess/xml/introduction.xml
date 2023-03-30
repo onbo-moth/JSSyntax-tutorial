@@ -1,11 +1,5 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
+  <h1>Wstęp</h1>
+  <font size="5">JavaScript<br/> <br/> JavaScript to język programowania z ograniczonym dostępem do komputera stosowany najczęściej na stronach intenetowych do tworzenia efektów, walidacji, skryptów, lub nawet prostych aplikacji. <br/> Kod JavaScript może być osadzony w kodzie strony lub jako osobny plik.</font>
 
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
-
-  <codeblock>
-    console.log(1)
-    console.log(2)
-  </codeblock>
 </root>
