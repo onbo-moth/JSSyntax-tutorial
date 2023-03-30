@@ -1,11 +1,36 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
-
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <h1>Pętle</h1>
+  <p>Pętle to funkcje w JavaScript które umożliwiają wielokrotną akytwacje tego samego kodu aż do czasu spełnienia danego warunku. <br/> <br/> 
+  Dwie podstawowe pętle w JavaScript to pętla "for" i pętla "while", pętla for jest używana by wykonać kod określoną ilość razy, lub do przejścia przez każdy element danego obiektu. <br/> <br/> 
+  Pętla while jest używana aby powtarzać dany kod aż do czasu spełnienia danego warunku.
+  
+  </p>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+
+    // ta pętla wykona kod zawarty w {} 3 razy.
+
+    // struktura pętli for: for(*zmienna*;*warunek*;*inkrementacja lub dekrementacja*)
+    
+    for (let i = 0; i  &lt;= 3; i++) 
+    {
+      console.log(i)
+    }
+
+    // to same ale wykonane przy użyciu pętli while
+
+    // struktura pętli while: while (*warunke*)
+
+    var x = 0;
+
+    while (x &lt;= 3)
+    {
+
+      console.log(x)
+      x = x+1;
+
+    }
+
   </codeblock>
+
 </root>
