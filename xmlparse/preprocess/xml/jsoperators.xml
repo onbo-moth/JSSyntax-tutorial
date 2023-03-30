@@ -2,12 +2,14 @@
   <h1>Operatory</h1>
   <p> Operatory w JavaScript to znaki pełniące pewną funkcję w kodzie. </p> 
 
-  <p> Operatory do działań </p>
-
   <table>
     <tr>
       <th>Znak</th>
       <th>Funkcja</th>
+    </tr>
+    <tr>
+      <td>=</td>
+      <td>Przypisanie</td>
     </tr>
     <tr>
       <td>+</td>
@@ -37,54 +39,57 @@
       <td>--</td>
       <td>Dekrementacja</td>
     </tr>
-  </table>
-
-  <p> Operatory do porównań </p>
-
-  <table>
     <tr>
-      <th>Znak</th>
-      <th>Funkcja</th>
-    </tr>
-    <tr>
-      <td></td>
+      <td> &gt; </td>
       <td>większe</td>
     </tr>
     <tr>
-      <td></td>
+      <td>  &lt; </td>
       <td>mniejsze</td>
     </tr>
     <tr>
-      <td>*</td>
-      <td>Mnożenie</td>
+      <td>&gt;=</td>
+      <td>większe bądź równe</td>
     </tr>
     <tr>
-      <td>/</td>
-      <td>Dzielenie</td>
+      <td>&lt;=</td>
+      <td>mniejsze bądź równe</td>
     </tr>
     <tr>
-      <td>%</td>
-      <td>Modulo</td>
+      <td>==</td>
+      <td>Równe</td>
     </tr>
     <tr>
-      <td>++</td>
-      <td>Inkrementcja</td>
+      <td>!=</td>
+      <td>Nierówne</td>
     </tr>
     <tr>
-      <td>--</td>
-      <td>Dekrementacja</td>
+      <td>&amp;&amp;</td>
+      <td>i</td>
+    </tr>
+    <tr>
+      <td>||</td>
+      <td>lub</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>nie</td>
     </tr>
   </table>
 
   <codeblock>
 
-    var x = 5;
+    var x = 5; //przypisanie
 
-    console.log("x: " + x);
+    var y = 5;
 
-    let y = 2;
+    console.log("dodawanie: " + (x + y))
 
-    console.log("y: " + y);
+    console.log("odejmowanie: " + (x - y))
+
+    console.log("mnożenie: " + (x * y))
+
+    console.log("dzielenie: " + (x / y))
 
   </codeblock>
 
