@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
 .hoverselect {
   position: relative;
-  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #00BFFF;
   width: 200px;
+  
 
+  text-align: center;
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
 }
 
 .hovercontainer {
+  border-radius: 5px;
   position: absolute;
 
   top: -1px;
@@ -15,17 +23,37 @@
 
   z-index: 2;
 
-  background-color: white;
-  border: 1px dotted red;
-
   overflow-y: hidden;
 }
 
 .hoverbutton {
-  border: 2px solid purple;
-  background-color: lightgray;
+  border: 1px solid #edf7f6;
+  background-color: #008DC0;
   display: block;
 
   width: 100%;
+
+
   text-align: center;
+  color: aliceblue;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+
+  transition: 0.5s;
 }
+
+.hoverbutton:hover{
+  background-color: #00BFFF;
+}
+
+.hoverselect:nth-child(1) > .hovercontainer > .hoverbutton:nth-child(1) {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.hoverselect:nth-child(1) > .hovercontainer > .hoverbutton:nth-child(12) {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+

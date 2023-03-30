@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
+* {
+  font-family: 'Work Sans', sans-serif;
+  color: aliceblue;
+}
+body {
+  background-color: #121212;
+}
 .menu {
   position: relative;
   
@@ -7,6 +15,7 @@
   padding: 0;
 
   border: 1px solid lime;
+  background-color: 	#292929;
 }
 
 .menu-logo {
@@ -43,13 +52,16 @@
 .mainpagecanvas {
   overflow: hidden;
   margin: 0;
-  height: 700px;
+  height: 500px;
 }
 
 .content {
   position: relative;
 
-  border: 1px solid purple;
+  border: 5px solid #edf7f6;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .mainpagecontent {
