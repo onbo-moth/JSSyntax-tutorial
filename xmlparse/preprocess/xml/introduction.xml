@@ -1,5 +1,7 @@
 <root>
   <h1>Wstęp</h1>
-  <p>JavaScript<br/> <br/> JavaScript to język programowania z ograniczonym dostępem do komputera stosowany najczęściej na stronach intenetowych do tworzenia efektów, walidacji, skryptów, lub nawet prostych aplikacji. <br/> Kod JavaScript może być osadzony w kodzie strony lub jako osobny plik.</p>
+  <p>JavaScript<br/> <br/> JavaScript to język programowania z ograniczonym dostępem do komputera stosowany najczęściej na stronach intenetowych do tworzenia efektów, walidacji, skryptów, lub nawet prostych aplikacji. <br/> Kod JavaScript może być osadzony w kodzie strony lub jako osobny plik. <br/> <br/>
+  Aby osadzić kod Jvascript na kodzie strony wystarczy dodać znacznik &lt;script&gt; i napisać w środku kod. <br/> <br/>
+  Aby osadzić kod zewnętrznie należy wpisać &lt;script src="nazwa.js"&gt; &lt;/script&gt;  </p>
 
 </root>

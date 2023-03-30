@@ -6,7 +6,7 @@ var colorSettings = {
 
 const buttonsParent = document.getElementsByClassName("menu-buttons")[0]
 
-new HoverSelect(buttonsParent, "Syntax", [
+new HoverSelect(buttonsParent, "Wybierz", [
   ["Wstęp", "introduction"],
   ["Okna", "jswindows"],
   ["Komentarze", "jscomments"],
@@ -17,6 +17,7 @@ new HoverSelect(buttonsParent, "Syntax", [
   ["Funkcje", "jsfunctions"],
   ["Debugging", "jsdebug"],
   ["Obiekty", "jsobjects"],
+  ["Obiekty Wbudowane", "jsbuiltin"],
   ["Obiekty Dom", "jsdom"]
 ])
 

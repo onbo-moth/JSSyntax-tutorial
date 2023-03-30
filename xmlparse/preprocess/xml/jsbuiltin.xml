@@ -1,0 +1,37 @@
+<root>
+  <h1>Obiekty Wbudowane</h1>
+  <p>JavaScript zawiera kilka wbudowanych obiektów, oto najważniejsze z nich i kilka przykładów ich użycia.<br/> </p>
+
+  <p>Obiekt Array: Służy do tworzenia i używania tablic </p>
+  <p>Obiekt String: Służy do tworzenia i edytowania ciągów znaków </p>
+  <p>Obiekt Math: Służy do zaawansowanych obliczeń matematycznych </p>
+  <p>Obiekt Date: Służy do rzeczy związanych z datą i czasem </p>
+
+  <codeblock>
+
+    // tablice to zmienne które przechowują wiele danych
+
+    var cars = ["Jeep", "Volvo", "BMW"];
+
+
+    // Obiekt string pozwala na manipulacje ciągami znaków
+
+    var text = "Ala ma kota";
+
+    console.log(text)
+
+    // Zamiana słowa "kota" na "psa"
+    console.log(text.replace("kota", "psa"));
+
+
+    // obiekt Math pozwala na zaawansowane obliczenia, oto kilka przykładów:
+
+    // Liczby PI
+    console.log(Math.PI);
+
+    // Pierwiastki
+    console.log(Math.sqrt(49));
+
+  </codeblock>
+  
+</root>
