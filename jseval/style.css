@@ -2,6 +2,23 @@
   border: 2px solid cyan;
 }
 
+.consolecontainer > button {
+  background-color: #007098;
+
+  width: 70px;
+  height: 30px;
+
+  display: block;
+
+  transition: 0.5s;
+  
+  border-radius: 10px;
+}
+
+.consolecontainer > button:hover{
+  background-color: #00BFFF;
+}
+
 .codediv {
   border: 1px solid purple;
 
@@ -9,7 +26,7 @@
   height: 300px;
 
   overflow: hidden;
-
+  
   display: inline-block;
 }
 
@@ -20,6 +37,10 @@
 
   width: 100%;
   height: 100%;
+
+  background-color: #292929;
+
+  font-family: monospace;
 }
 
 .console {
@@ -31,16 +52,22 @@
   overflow: scroll;
 
   display: inline-block;
+
+  overflow: hidden;
 }
 
 .message-log {
-  background-color: lightgray;
+  background-color: #292929;
+  color: aliceblue;
+  font-family: monospace;
 }
 
 .message-warn {
-  background-color: lightyellow;
+  background-color: #999900;
+  font-family: monospace;
 }
 
 .message-error {
-  background-color: pink;
+  background-color: #660000;
+  font-family: monospace;
 }
