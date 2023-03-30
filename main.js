@@ -1,7 +1,7 @@
 var colorSettings = {
   lineColor: "#ffffff",
   dotColor: "#ffffff",
-  glowColor: "#0000ff"
+  glowColor: "#6FD2DC"
 }
 
 const buttonsParent = document.getElementsByClassName("menu-buttons")[0]

@@ -1,5 +1,5 @@
 .consolecontainer {
-  border: 2px solid cyan;
+  border: 2px solid #212121;
 }
 
 .consolecontainer > button {
@@ -13,6 +13,8 @@
   transition: 0.5s;
   
   border-radius: 10px;
+
+  font-weight: bold;
 }
 
 .consolecontainer > button:hover{
@@ -20,7 +22,7 @@
 }
 
 .codediv {
-  border: 1px solid purple;
+  border: 2px solid #edf7f6;
 
   width: 200px;
   height: 300px;
@@ -28,6 +30,8 @@
   overflow: hidden;
   
   display: inline-block;
+
+  margin-left: -2px;
 }
 
 .codearea {
@@ -38,13 +42,13 @@
   width: 100%;
   height: 100%;
 
-  background-color: #292929;
+  background-color: black;
 
   font-family: monospace;
 }
 
 .console {
-  border: 1px solid maroon;
+  border: 2px solid #edf7f6;
 
   width: 400px;
   height: 300px;
@@ -54,6 +58,8 @@
   display: inline-block;
 
   overflow: hidden;
+
+  background-color: black;
 }
 
 .message-log {
@@ -63,11 +69,11 @@
 }
 
 .message-warn {
-  background-color: #999900;
+  background-color: #6E6E15;
   font-family: monospace;
 }
 
 .message-error {
-  background-color: #660000;
+  background-color: #571919;
   font-family: monospace;
 }

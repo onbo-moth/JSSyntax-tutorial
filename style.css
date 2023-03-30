@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
 
-  border: 1px solid lime;
+  border: 5px solid #edf7f6;
   background-color: 	#292929;
 }
 
@@ -25,7 +25,9 @@ body {
 
   width: 20%;
   height: 80px;
-  border: 1px solid yellow;
+  border: 2px solid #edf7f6;
+
+  margin-top: -2px;
 
   display: inline-block;
 }
@@ -37,9 +39,10 @@ body {
 
   width: 50%;
   height: 80px;
-  border: 1px solid yellow;
+  border: 2px solid #edf7f6;
 
   margin-left: auto;
+  margin-top: -2px;
 
   display: flex;
   justify-content: center;
