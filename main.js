@@ -1,3 +1,9 @@
+var colorSettings = {
+  lineColor: "#ffffff",
+  dotColor: "#ffffff",
+  glowColor: "#0000ff"
+}
+
 const buttonsParent = document.getElementsByClassName("menu-buttons")[0]
 
 new HoverSelect(buttonsParent, "Syntax", [

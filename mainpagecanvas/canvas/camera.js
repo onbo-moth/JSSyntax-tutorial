@@ -23,9 +23,14 @@ class Camera {
 
     this.ctx.arc(point.x - this.xOffset, point.y - this.yOffset, 5, 0, 2*Math.PI)
 
+    let tmpFillStyle = this.ctx.fillStyle
+    this.ctx.fillStyle = colorSettings.dotColor
+
     this.ctx.fill()
 
     this.ctx.closePath()
+
+    this.ctx.fillStyle = tmpFillStyle
   }
 
   drawLine(line){
@@ -40,9 +45,14 @@ class Camera {
     this.ctx.moveTo(line.p1.x - this.xOffset, line.p1.y - this.yOffset)
     this.ctx.lineTo(line.p2.x - this.xOffset, line.p2.y - this.yOffset)
 
+    let tmpStrokeStyle = this.ctx.strokeStyle
+    this.ctx.strokeStyle = colorSettings.lineColor
+
     this.ctx.stroke()
 
     this.ctx.closePath()
+
+    this.ctx.strokeStyle = tmpStrokeStyle
   }
 
   glowTriangle(triangle){
@@ -63,9 +73,7 @@ class Camera {
     this.ctx.lineTo(triangle.points[2].x - this.xOffset, triangle.points[2].y - this.yOffset)
 
     let tmpFillStyle = this.ctx.fillStyle
-
-
-    this.ctx.fillStyle = this.addTransparency("#ff00ff", triangle.glow)
+    this.ctx.fillStyle = this.addTransparency(colorSettings.glowColor, triangle.glow)
 
     this.ctx.fill()
 
