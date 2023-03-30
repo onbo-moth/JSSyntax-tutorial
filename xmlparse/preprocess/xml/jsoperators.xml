@@ -1,11 +1,91 @@
 <root>
-  <h1>Hello everyone!</h1>
-  <p>Test<br/>aaaa</p>
+  <h1>Operatory</h1>
+  <p> Operatory w JavaScript to znaki pełniące pewną funkcję w kodzie. </p> 
 
-  <code><c-V>console</c-V>.<c-F>log</c-F>(<c-L>"hi"</c-L>)</code>
+  <p> Operatory do działań </p>
+
+  <table>
+    <tr>
+      <th>Znak</th>
+      <th>Funkcja</th>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Dodawnie</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Odejmowanie</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Mnożenie</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Dzielenie</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Modulo</td>
+    </tr>
+    <tr>
+      <td>++</td>
+      <td>Inkrementcja</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>Dekrementacja</td>
+    </tr>
+  </table>
+
+  <p> Operatory do porównań </p>
+
+  <table>
+    <tr>
+      <th>Znak</th>
+      <th>Funkcja</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>większe</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mniejsze</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Mnożenie</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Dzielenie</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Modulo</td>
+    </tr>
+    <tr>
+      <td>++</td>
+      <td>Inkrementcja</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>Dekrementacja</td>
+    </tr>
+  </table>
 
   <codeblock>
-    console.log(1)
-    console.log(2)
+
+    var x = 5;
+
+    console.log("x: " + x);
+
+    let y = 2;
+
+    console.log("y: " + y);
+
   </codeblock>
+
 </root>
