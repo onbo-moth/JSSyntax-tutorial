@@ -2,7 +2,6 @@ const buttonsParent = document.getElementsByClassName("menu-buttons")[0]
 
 new HoverSelect(buttonsParent, "Syntax", [
   ["Wstęp", "introduction"],
-  ["Podstawy", "jsbasics"],
   ["Okna", "jswindows"],
   ["Komentarze", "jscomments"],
   ["Zmienne", "jsvariables"],
