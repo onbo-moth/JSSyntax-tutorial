@@ -8,12 +8,12 @@
 
     var x = 5;
 
-    alert(x);
+    console.log("x: " + x);
 
 
     let y = 2;
 
-    alert(y);
+    console.log("y: " + y);
 
   </codeblock>
 
