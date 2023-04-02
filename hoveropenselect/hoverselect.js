@@ -23,7 +23,6 @@ class HoverSelect {
       htmlButton.classList.add("hoverbutton")
 
       htmlButton.addEventListener('click', loadPage.bind(loadPage,
-        document.getElementById("content"), 
         button[1].toLowerCase()
       ))
 

@@ -1,0 +1,23 @@
+.navTable {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  border: 0;
+}
+
+.navRow {
+  width: 100%;
+}
+
+.navCell {
+  border: 0;
+}
+
+.navCell:not(.navLink){
+  font-size: larger;
+  font-weight: bold;
+}
+
+.navLink {
+  color: cyan;
+}

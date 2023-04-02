@@ -1,4 +1,10 @@
 <root>
+  <ptable>
+    <pa></pa>
+    <pa>Wstęp</pa>
+    <pa ref="jswindows">Okna Dialogowe &gt;&gt;</pa>
+  </ptable>
+
   <h1>Wstęp</h1>
   <p>JavaScript<br/> <br/> JavaScript to język programowania z ograniczonym dostępem do komputera stosowany najczęściej na stronach intenetowych do tworzenia efektów, walidacji, skryptów, lub nawet prostych aplikacji. <br/> Kod JavaScript może być osadzony w kodzie strony lub jako osobny plik. <br/> <br/>
   Aby osadzić kod Jvascript na kodzie strony wystarczy dodać znacznik &lt;script&gt; i napisać w środku kod. <br/> <br/>

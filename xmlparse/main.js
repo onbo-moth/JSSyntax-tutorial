@@ -18,7 +18,9 @@ function removeHTMLChildren(htmlParent){
   }
 }
 
-function loadPage(htmlParent, pageName){
+function loadPage(pageName){
+  let htmlParent = document.getElementById("content")
+
   if(contentMap.get(pageName) === undefined) return alert(`Page ${pageName} doesn't exist.`)
 
   removeHTMLChildren(htmlParent)
@@ -45,6 +47,11 @@ function parseElement(node, parent){
       htmlnode = document.createElement("span")
 
       htmlnode.classList.add(syntaxColors[node.tagName])
+    } else if(node.tagName == "ptable"){
+      htmlnode = createNavigator(node)
+
+      parent.appendChild(htmlnode)
+      return
     } else if(node.tagName == "codeblock"){
       let text = node.textContent
       text = removeIndentation(text, minSpaces(text))
